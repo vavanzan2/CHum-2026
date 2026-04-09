@@ -3,7 +3,7 @@
 #
 # OBJECTIVE: Load the results of previous steps and generate: 
 #   - Table stats summary
-#   - Tests t  (with vs without)
+#   - T-test  (with vs without)
 #   - Graphs saved in the folder plots/
 # =============================================================================
 
@@ -50,9 +50,9 @@ def run():
     print(summary_context.to_string(index=False))
 
     # -----------------------------------------------------------------------
-    # 2. T tests
+    # 2. T-tests
     # -----------------------------------------------------------------------
-    print_section("T tests (without and with contex)")
+    print_section("T-tests (without and with contex)")
 
     t_art = ttest_rel(pairs_eval["p_noctx"], pairs_eval["p_ctx"])
     print(f"  Artifical pairs   → t = {t_art.statistic:.4f},  p = {t_art.pvalue:.4f}")
