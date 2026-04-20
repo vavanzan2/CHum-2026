@@ -52,7 +52,7 @@ The emoji prediction model used is [`cardiffnlp/twitter-roberta-base-emoji`](htt
 ├── step2_build_pairs.py          # Step 2: extract experimental pairs and build context
 ├── step3_predict_artificial.py   # Step 3: model predictions on artificially inserted emojis
 ├── step4_predict_spontaneous.py  # Step 4: model predictions on spontaneous emojis
-├── step5_analysis.py             # Step 5: statistical analysis and plot generation
+├── step5_analysis.py             # Step 5: summarize results, run paired t-tests, identify extreme cases, and generate plots
 ├── main.py                       # Entry point: run all steps or selected steps via CLI
 ├── requirements.txt              # Python dependencies
 │
